@@ -10,6 +10,9 @@
     });
 
 
+    const enableDesktopMotion = window.matchMedia("(min-width: 992px) and (prefers-reduced-motion: no-preference)").matches;
+
+    if (enableDesktopMotion) {
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
     gsap.config({
         nullTargetWarn: false,
@@ -203,6 +206,8 @@
             },
         });
     });
+
+    }
 
 
     // services one carousel
