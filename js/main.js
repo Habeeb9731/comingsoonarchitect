@@ -410,10 +410,6 @@
     $(".js-video-button").modalVideo();
     // initialize AOS
     AOS.init();
-    // Preloader
-    $(window).preloader({
-        delay: 1000,
-    });
     // animated heading
     $(function() {
         $(".animate-heading").animatedHeadline({
@@ -477,19 +473,5 @@
 
         //Set Object
         var accordion = new Accordion($(".accordion-menu"), false);
-    });
-    /* ======== Preloader ======== */
-    $(window).on("load", function() {
-        var preloaderDelay = 500,
-            preloaderFadeOutTime = 300;
-
-        function hidePreloader() {
-            var loadingAnimation = $(".placeholder"),
-                preloader = $(".placeholder-cs");
-            loadingAnimation.fadeOut();
-            preloader.delay(preloaderDelay).fadeOut(preloaderFadeOutTime);
-        }
-
-        hidePreloader();
     });
 })(jQuery);

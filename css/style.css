@@ -3386,6 +3386,7 @@ ul {
 /* 24. Preloader css */
 
 .placeholder-cs {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
