@@ -96,38 +96,6 @@
         });
     })
 
-    let HomeDigital = gsap.timeline({});
-    let mark = document.querySelector(".anim-text-hero");
-    let cs_subtext = document.querySelector(".anim-subtext");
-
-    let split_creatives = new SplitText(mark, {
-        type: "chars,words",
-    });
-    let splitsubtext = new SplitText(cs_subtext, {
-        type: "chars words",
-    });
-
-    HomeDigital.from(split_creatives.chars, {
-        duration: 0.5,
-        x: 100,
-        delay: 0.8,
-        autoAlpha: 0,
-        stagger: 0.1,
-    });
-
-    HomeDigital.from(
-        splitsubtext.words, {
-            duration: 2,
-            x: 50,
-            autoAlpha: 0,
-            stagger: 0.05,
-        },
-        "-=1"
-    );
-
-
-
-
     let textTextWrittings = gsap.utils.toArray(".anim-heading-title");
     textTextWrittings.forEach((splitTextLine) => {
         const tl = gsap.timeline({
