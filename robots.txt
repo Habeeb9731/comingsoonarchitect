@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://modernluxury-design.com/sitemap.xml
