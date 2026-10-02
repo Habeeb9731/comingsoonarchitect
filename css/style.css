@@ -2982,6 +2982,58 @@ ul {
     font-size: 55px;
 }
 
+/* Keep the footer's social links in one stable row on wide screens. */
+.footer-one .mt-100.d-flex.justify-content-between.align-items-center {
+    align-items: flex-start !important;
+    column-gap: 48px;
+}
+
+.footer-one-social-container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 24px;
+    min-width: 0;
+}
+
+.footer-one-social-container .btn {
+    flex: 0 0 auto;
+    margin: 0 !important;
+    white-space: nowrap;
+}
+
+.footer-copyright-text {
+    flex: 0 0 250px;
+    max-width: 250px;
+    margin: 0;
+    padding-top: 0 !important;
+}
+
+@media only screen and (max-width: 1399px) {
+    .footer-one .mt-100.d-flex.justify-content-between.align-items-center {
+        align-items: flex-start !important;
+    }
+
+    .footer-one-social-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .footer-copyright-text {
+        width: 100%;
+        max-width: none;
+        flex-basis: auto;
+        margin-top: 24px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .footer-one-social-container {
+        gap: 12px;
+    }
+}
+
 
 /* 15. Why Choose Us css */
 
